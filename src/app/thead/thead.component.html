@@ -1,7 +1,19 @@
 <div>
     <form class="search-form" action="">
-        <button class="head-btns"><i class="fa fa-search" aria-hidden="true"></i></button>
-        <input class="input-search" (keyup)="filter($event)" type="text" autocomplete="off">
-        <button class="head-btns"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        <button class="head-btns">
+            <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+            <svg-icon (click)="showSearchBar(); $event.preventDefault()" src="../../../../assets/img/search.svg"
+                [svgStyle]="{ 'width.px':16, 'height.px': 16 }">
+            </svg-icon>
+        </button>
+        <div style="width:100%;">
+            <input *ngIf="showSearch" class="input-search" (keyup)="filter($event)" type="text" autocomplete="off">
+        </div>
+        <button class="head-btns">
+
+            <svg-icon class="plus-icon" src="../../../../assets/img/plus.svg"
+                [svgStyle]="{ 'width.px':16, 'height.px': 16, 'fill': '#91A4C7' }">
+            </svg-icon>
+        </button>
     </form>
 </div>

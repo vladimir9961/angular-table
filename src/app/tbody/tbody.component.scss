@@ -14,36 +14,40 @@ th,
 td {
     padding: 0;
     border-spacing: 0;
-
+    text-align: left;
 }
 
-th,
-td {
-    padding: 0 10px;
+th {
+    height: 31px;
+    line-height: 0;
+}
 
+td {
+    line-height: 0;
+    height: 32px;
+}
+
+app-svg {
+    background: transparent;
+}
+
+svg-icon {
+    background: transparent;
+    display: flex;
+    align-items: center;
 }
 
 table {
-    border-collapse: separate;
     border-spacing: 0 3px;
 
     thead {
         tr {
-            height: 31px;
 
             th {
                 font-size: 16px;
                 font-weight: bold;
                 color: $textSecCol;
                 text-align: left;
-            }
-
-            .names-th {
-                width: 200px;
-            }
-
-            .checkbox-head {
-                width: 40px;
             }
 
             .count {
@@ -53,8 +57,10 @@ table {
                 color: $primary;
                 align-items: center;
                 justify-content: center;
-                width: 23px;
+                width: 24px;
                 height: 23px;
+                margin-left: 4px;
+                margin-right: 4px;
             }
 
         }
@@ -63,9 +69,20 @@ table {
     tbody {
         background-color: $primary;
 
+        // .selected {
+        //     background: #E5E5E5;
+
+        //     .flex {
+        //         color: white;
+        //     }
+        // }
+
         tr {
             background: transparent;
-            height: 32px;
+            height: 36px;
+            border-radius: 3px;
+            box-shadow: inset 0 0 0 2px $primary;
+            cursor: pointer;
 
             &:hover {
                 background-color: $hover;
@@ -77,6 +94,22 @@ table {
                 border: none;
                 font-size: 12px;
                 width: fit-content;
+
+                .margin {
+                    background: transparent;
+                    margin-right: 22px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+
+                }
+
+                .img {
+                    width: 20px;
+                    height: 24px;
+                    background: red;
+                    border-radius: 2px;
+                }
 
                 .icons {
                     background: transparent;
@@ -102,17 +135,26 @@ table {
                             height: fit-content;
                             right: 0;
                             z-index: 2;
-                            padding: 4px;
                             background: $primary;
 
                             li {
                                 width: 110px;
+                                margin: 1px 2px;
                                 line-height: 26px;
                                 display: flex;
                                 background: $primary;
                                 align-items: center;
-                                gap: 0.5rem;
                                 cursor: pointer;
+                                border-radius: 2px;
+                                font-size: 12px;
+
+                                &:last-child {
+                                    color: red;
+                                }
+
+                                svg-icon {
+                                    margin: 6px 7px 6px 6px;
+                                }
 
                                 &:hover {
                                     background: $hover;
@@ -199,6 +241,9 @@ table {
 
                 .label-holder {
                     background: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     .container {
 
@@ -218,7 +263,6 @@ table {
                         .checkmark {
                             position: relative;
                             top: 0;
-                            left: 4px;
                             height: 14px;
                             width: 14px;
                             background-color: $inputCol;
@@ -240,7 +284,6 @@ table {
                         height: 32px;
                         display: flex;
                         align-items: center;
-                        width: 100%;
                     }
 
                     .container input:checked~.checkmark:after {
@@ -268,6 +311,8 @@ table {
                     align-items: center;
                     gap: 0.3rem;
                     background: $transparent;
+                    width: 190px;
+                    margin-right: 22px;
 
                     .person-img {
                         height: 24px;

@@ -8,7 +8,8 @@
         "cdl": "58725324",
         "cdl_exp": "1,565",
         "medical_exp": "565",
-        "mvr_exp": "65"
+        "mvr_exp": "65",
+        "img": "../../assets/img/person1.svg"
     },
     {
         "name": "Darryl Tolbert",
@@ -19,18 +20,8 @@
         "cdl": "58725324",
         "cdl_exp": "1,565",
         "medical_exp": "565",
-        "mvr_exp": "65"
-    },
-    {
-        "name": "Darryl Tolbert",
-        "phone": "(621) 321-2232",
-        "ssn": "123-45-6789",
-        "dob": "12/06/84",
-        "hired": "03/24/17",
-        "cdl": "58725324",
-        "cdl_exp": "1,565",
-        "medical_exp": "565",
-        "mvr_exp": "65"
+        "mvr_exp": "65",
+        "img": "../../assets/img/person2.svg"
     },
     {
         "name": "Eric Reid",
@@ -41,7 +32,8 @@
         "cdl": "58725324",
         "cdl_exp": "1,565",
         "medical_exp": "565",
-        "mvr_exp": "65"
+        "mvr_exp": "65",
+        "img": "../../assets/img/person3.svg"
     },
     {
         "name": "Glen Cotton",
@@ -52,7 +44,8 @@
         "cdl": "58725324",
         "cdl_exp": "1,565",
         "medical_exp": "565",
-        "mvr_exp": "65"
+        "mvr_exp": "65",
+        "img": "../../assets/img/person4.svg"
     },
     {
         "name": "Issac Douglas",
@@ -63,7 +56,8 @@
         "cdl": "58725324",
         "cdl_exp": "1,565",
         "medical_exp": "565",
-        "mvr_exp": "65"
+        "mvr_exp": "65",
+        "img": "../../assets/img/person6.svg"
     },
     {
         "name": "James Smith",
@@ -74,6 +68,7 @@
         "cdl": "58725324",
         "cdl_exp": "1,565",
         "medical_exp": "565",
-        "mvr_exp": "65"
+        "mvr_exp": "65",
+        "img": "../../assets/img/person5.svg"
     }
 ]

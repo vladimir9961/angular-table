@@ -15,10 +15,12 @@ export class TbodyComponent implements OnInit {
     this.workers.data$.subscribe(res => {
       this.peoples = []
       this.peoples = res
+      console.log(res);
+
     })
   }
-
   showDropdown(index: number) {
+
     if (this.show == index) {
       this.show = -1;
     }

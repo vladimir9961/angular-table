@@ -20,14 +20,16 @@ interface Worker {
 
 export class TheadComponent implements OnInit {
   worker: Worker[] = []
-
+  showSearch = false
   constructor(private workers: WorkersService) { }
   ngOnInit(): void {
     this.workers.getWorkers().subscribe(res => {
       this.workers.updateWorkerData(res)
     })
   }
-
+  showSearchBar() {
+    this.showSearch = !this.showSearch
+  }
   filter(event: any) {
     this.workers.getWorkers()
       .pipe(

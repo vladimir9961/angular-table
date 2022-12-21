@@ -4,8 +4,8 @@
             <tr>
                 <th class="checkbox-head"><span class="count">0</span></th>
                 <th class="names-th">Name</th>
-                <th colspan="3">Phone</th>
-                <th>SSN</th>
+                <th class="phone">Phone</th>
+                <th class="ssn">SSN</th>
                 <th>DOB</th>
                 <th>Hired</th>
                 <th>CDL #</th>
@@ -15,13 +15,15 @@
                 <th>MVR Exp.</th>
                 <th>
                     <div class="flex">
-                        <i class="fa fa-paperclip" aria-hidden="true"></i>
+                        <svg-icon style="background:transparent;" src="../../../../assets/img/link.svg"
+                            [svgStyle]="{ 'width.px':18, 'height.px': 18,'background':'rgb(0 0 0 / 0%)' }">
+                        </svg-icon>
                     </div>
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let person of peoples; let i = index " align="center">
+            <tr *ngFor="let person of peoples; let i = index" align="center">
                 <td class="checkbox">
                     <div class="label-holder">
                         <label class="container">
@@ -30,64 +32,147 @@
                         </label>
                     </div>
                 </td>
-                <td colspan="3" class="name">
+                <td height="32" class="name">
                     <div class="holder-person">
-                        <img class="person-img" src="../../assets/img/person.jpg" alt="">
+                        <div class="img">
+
+                        </div>
                         <span>
                             {{person.name}}
                         </span>
                     </div>
                 </td>
-                <td>{{person.phone}}</td>
-                <td>{{person.ssn}}</td>
-                <td>{{person.dob}}</td>
-                <td>{{person.hired}}</td>
-                <td> in {{person.cdl}} days</td>
-                <td><app-svg></app-svg></td>
                 <td>
-                    <div class="flex">
-                        <div class="progres-cdl">
-                            <div class="a"></div>
-                            <div class="b"></div>
+                    <div class="margin">
+                        {{person.phone}}
+                    </div>
+                </td>
+                <td>
+                    <div class="margin">
+
+                        {{person.ssn}}
+                    </div>
+                </td>
+                <td>
+                    <div class="margin">
+
+                        {{person.dob}}
+                    </div>
+                </td>
+                <td>
+                    <div class="margin">
+
+                        {{person.hired}}
+                    </div>
+                </td>
+                <td>
+                    <div class="margin">
+
+                        in {{person.cdl}} days
+                    </div>
+                </td>
+                <td>
+                    <div class="margin">
+                        <svg-icon style="background:transparent;" src="../../../../assets/img/state.svg"
+                            [svgStyle]="{ 'width.px':44, 'height.px': 19,'background':'rgb(0 0 0 / 0%)' }">
+                        </svg-icon>
+                    </div>
+                </td>
+                <td>
+                    <div class="margin">
+
+                        <div class="flex">
+                            <div class="progres-cdl">
+                                <div class="a"></div>
+                                <div class="b"></div>
+                            </div>
+                            in {{person.cdl_exp}} days
                         </div>
-                        in {{person.cdl_exp}} days
                     </div>
                 </td>
                 <td>
-                    <div class="flex">
-                        <div class="progres-medical">
-                            <div class="a"></div>
-                            <div class="b"></div>
-                        </div>in {{person.medical_exp}} days
+                    <div class="margin">
+
+                        <div class="flex">
+                            <div class="progres-medical">
+                                <div class="a"></div>
+                                <div class="b"></div>
+                            </div>in {{person.medical_exp}} days
+                        </div>
                     </div>
                 </td>
                 <td>
-                    <div class="flex">
-                        <div class="progres-mvr">
-                            <div class="a"></div>
-                            <div class="b"></div>
-                        </div> in {{person.mvr_exp}} days
+                    <div class="margin">
+
+                        <div class="flex">
+                            <div class="progres-mvr">
+                                <div class="a"></div>
+                                <div class="b"></div>
+                            </div> in {{person.mvr_exp}} days
+                        </div>
                     </div>
                 </td>
                 <td class="actions">
-                    <div class="icons">
-                        <i class="fa fa-paperclip" aria-hidden="true"></i>
-                        <i class="fa fa-file" aria-hidden="true"></i>
-                        <i class="fa fa-ellipsis-h" aria-hidden="true" (click)="showDropdown(i)"></i>
-                        <div class="dropdown" *ngIf="show == i">
-                            <ul>
-                                <li><i class="fa fa-pencil" aria-hidden="true"></i> Edit</li>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i>Add CDL</li>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i>Add Medical</li>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i>Add MVR</li>
-                                <li><i class="fa fa-plus" aria-hidden="true"></i>Add Test</li>
-                                <li><i class="fa fa-power-off" aria-hidden="true"></i>Deactivate</li>
-                                <li><i class="fa fa-trash" aria-hidden="true"></i>Delete</li>
-                            </ul>
+                    <div class="margin">
+                        <div class="icons">
+                            <svg-icon style="background:transparent;" src="../../../../assets/img/link.svg"
+                                [svgStyle]="{ 'width.px':18, 'height.px': 18,'background':'rgb(0 0 0 / 0%)' }">
+                            </svg-icon>
+                            <svg-icon src="../../../../assets/img/Note.svg"
+                                [svgStyle]="{ 'width.px':18, 'height.px': 18,'background':'rgb(0 0 0 / 0%)' }">
+                            </svg-icon>
+                            <svg-icon (click)="showDropdown(i)" src="../../../../assets/img/dots.svg"
+                                [svgStyle]="{ 'width.px':18, 'height.px': 18,'background':'rgb(0 0 0 / 0%)' }">
+                            </svg-icon>
+                            <div class="dropdown" *ngIf="show == i">
+                                <ul>
+                                    <li>
+                                        <svg-icon src="../../../../assets/img/pencil.svg"
+                                            [svgStyle]="{ 'width.px':16, 'height.px': 16,'background':'rgb(0 0 0 / 0%)' }">
+                                        </svg-icon>
+                                        Edit
+                                    </li>
+                                    <li>
+                                        <svg-icon src="../../../../assets/img/plus.svg"
+                                            [svgStyle]="{ 'width.px':16, 'height.px': 16,'background':'rgb(0 0 0 / 0%)' }">
+                                        </svg-icon>
+                                        Add CDL
+                                    </li>
+                                    <li>
+                                        <svg-icon src="../../../../assets/img/plus.svg"
+                                            [svgStyle]="{ 'width.px':16, 'height.px': 16,'background':'rgb(0 0 0 / 0%)' }">
+                                        </svg-icon>
+                                        Add Medical
+                                    </li>
+                                    <li>
+                                        <svg-icon src="../../../../assets/img/plus.svg"
+                                            [svgStyle]="{ 'width.px':16, 'height.px': 16,'background':'rgb(0 0 0 / 0%)' }">
+                                        </svg-icon>
+                                        Add MVR
+                                    </li>
+                                    <li>
+                                        <svg-icon src="../../../../assets/img/plus.svg"
+                                            [svgStyle]="{ 'width.px':16, 'height.px': 16,'background':'rgb(0 0 0 / 0%)' }">
+                                        </svg-icon>
+                                        Add Test
+                                    </li>
+                                    <li>
+                                        <svg-icon src="../../../../assets/img/off.svg"
+                                            [svgStyle]="{ 'width.px':16, 'height.px': 16,'background':'rgb(0 0 0 / 0%)' }">
+                                        </svg-icon>
+                                        Deactivate
+                                    </li>
+                                    <li>
+                                        <svg-icon src="../../../../assets/img/trash.svg"
+                                            [svgStyle]="{ 'width.px':16, 'height.px': 16,'background':'rgb(0 0 0 / 0%)' }">
+                                        </svg-icon>
+                                        Delete
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </td>
-
             </tr>
         </tbody>
     </table>

@@ -1,37 +1,60 @@
 .search-form {
     display: flex;
-    gap: 0.5rem;
+    gap: 6px;
     height: 32px;
     justify-content: space-between;
 
-
     .head-btns {
-        width: 32px;
-        height: 32px;
+
         background: none;
         border: none;
         cursor: pointer;
 
-        i {
+        svg-icon {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100%;
-            width: 100%;
+            width: 32px;
+            height: 32px;
             background: white;
             color: #DADADA;
             border-radius: 3px;
+
+            svg {
+                background: transparent;
+            }
+        }
+
+        .plus-icon {
+            svg {
+                path {
+                    fill: #91A4C7;
+
+                }
+            }
         }
     }
 
     .input-search {
-        width: 100%;
         border: none;
         border-radius: 3px;
         background: white;
+        position: relative;
+        left: 0;
+        animation: example 1s forwards;
 
         &:focus-visible {
             outline: 2px solid #707070;
         }
+    }
+}
+
+@keyframes example {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
     }
 }
