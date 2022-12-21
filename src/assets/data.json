@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Angelo Trotter",
+        "phone": "(621) 321-2232",
+        "ssn": "123-45-6789",
+        "dob": "12/06/84",
+        "hired": "03/24/17",
+        "cdl": "58725324",
+        "cdl_exp": "1,565",
+        "medical_exp": "565",
+        "mvr_exp": "65"
+    },
+    {
+        "name": "Darryl Tolbert",
+        "phone": "(621) 321-2232",
+        "ssn": "123-45-6789",
+        "dob": "12/06/84",
+        "hired": "03/24/17",
+        "cdl": "58725324",
+        "cdl_exp": "1,565",
+        "medical_exp": "565",
+        "mvr_exp": "65"
+    },
+    {
+        "name": "Darryl Tolbert",
+        "phone": "(621) 321-2232",
+        "ssn": "123-45-6789",
+        "dob": "12/06/84",
+        "hired": "03/24/17",
+        "cdl": "58725324",
+        "cdl_exp": "1,565",
+        "medical_exp": "565",
+        "mvr_exp": "65"
+    },
+    {
+        "name": "Eric Reid",
+        "phone": "(621) 321-2232",
+        "ssn": "123-45-6789",
+        "dob": "12/06/84",
+        "hired": "03/24/17",
+        "cdl": "58725324",
+        "cdl_exp": "1,565",
+        "medical_exp": "565",
+        "mvr_exp": "65"
+    },
+    {
+        "name": "Glen Cotton",
+        "phone": "(621) 321-2232",
+        "ssn": "123-45-6789",
+        "dob": "12/06/84",
+        "hired": "03/24/17",
+        "cdl": "58725324",
+        "cdl_exp": "1,565",
+        "medical_exp": "565",
+        "mvr_exp": "65"
+    },
+    {
+        "name": "Issac Douglas",
+        "phone": "(621) 321-2232",
+        "ssn": "123-45-6789",
+        "dob": "12/06/84",
+        "hired": "03/24/17",
+        "cdl": "58725324",
+        "cdl_exp": "1,565",
+        "medical_exp": "565",
+        "mvr_exp": "65"
+    },
+    {
+        "name": "James Smith",
+        "phone": "(621) 321-2232",
+        "ssn": "123-45-6789",
+        "dob": "12/06/84",
+        "hired": "03/24/17",
+        "cdl": "58725324",
+        "cdl_exp": "1,565",
+        "medical_exp": "565",
+        "mvr_exp": "65"
+    }
+]

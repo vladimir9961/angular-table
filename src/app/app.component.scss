@@ -1,0 +1,13 @@
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+
+    .form-container {
+        display: grid;
+        padding: 10px;
+        border-radius: 4px;
+    }
+}

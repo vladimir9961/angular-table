@@ -1,0 +1,37 @@
+.search-form {
+    display: flex;
+    gap: 0.5rem;
+    height: 32px;
+    justify-content: space-between;
+
+
+    .head-btns {
+        width: 32px;
+        height: 32px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background: white;
+            color: #DADADA;
+            border-radius: 3px;
+        }
+    }
+
+    .input-search {
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        background: white;
+
+        &:focus-visible {
+            outline: 2px solid #707070;
+        }
+    }
+}
